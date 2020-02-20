@@ -33,7 +33,7 @@ exports.checkSpam = (comment, ip)=> {
             }, function(err, spam) {
                 if (err) console.log (`垃圾评论检测出错！${err}`);
                 if (spam) {
-                    console.log('逮到一只垃圾评论，烧死它！用文火~ 内容:${comment.get('comment')}');
+                    console.log(`逮到一只垃圾评论，烧死它！用文火~ 内容:${comment.get('comment')}`);
 //                     comment.set('isSpam', true);
 //                     comment.setACL(new AV.ACL({"*":{"read":false}}));
 //                     comment.save();
